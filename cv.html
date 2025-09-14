@@ -7,104 +7,82 @@ layout: null
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ site.title }}</title>
+  <title>{{ site.name }}</title>
   <link href="./css/bulma.min.css" rel="stylesheet">
-  <link href="./css/cv.css" rel="stylesheet">
+  <link href="./css/index.css" rel="stylesheet">
 </head>
 
 <body>
-  <section>
-    <div class="container is-max-desktop">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-body container is-max-desktop">
       <div class="columns is-vcentered">
+        <div class="column is-4">
+          <figure class="image portrait">
+            <img src="{{ '/images/portrait.jpg' | relative_url }}" alt="Portrait of {{ site.name }}">
+          </figure>
+        </div>
         <div class="column">
-          <h1 class="title is-2">{{ site.name }}</h1>
-          <h1 class="subtitle is-5">{{ site.position }}</h1>
-        </div>
-        <div class="column has-text-right">
-          <p><a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i> {{ site.email }}</a></p>
-          <p><a href="https://github.com/{{ site.github_username }}"><i class="fab fa-github"></i> {{ site.github_username }}</a></p>
-        </div>
-      </div>
-
-      <div class="content">
-        <h2>Education</h2>
-        <div class="columns">
-          <div class="column is-four-fifths">
-            <b>Konkuk University, Seoul, Korea</b><br>
-            B.S. in Mechanical and Aerospace Engineering (GPA: 3.52 / 4.5)
-          </div>
-          <div class="column is-one-fifth has-text-right">
-            Mar 2024 – Present<br>
-            (Expected Feb 2026)
+          <h1 class="title is-2"><b>Hello, I'm {{ site.name }}</b></h1>
+          <p class="subtitle is-5">{{ site.description }}</p>
+          <div class="buttons mt-3">
+            <a class="button is-light" href="cv.html">
+              <span class="icon"><i class="fas fa-file"></i></span><span>CV</span>
+            </a>
+            <a class="button is-light" href="https://github.com/{{ site.github_username }}">
+              <span class="icon"><i class="fab fa-github"></i></span><span>GitHub</span>
+            </a>
+            <a class="button is-light" href="mailto:{{ site.email }}">
+              <span class="icon"><i class="fas fa-envelope"></i></span><span>Email</span>
+            </a>
           </div>
         </div>
-        <div class="columns">
-          <div class="column is-four-fifths">
-            <b>Hanseo University, Seosan, Korea</b><br>
-            B.S. in Aeronautical Mechanical Engineering (GPA: 3.75 / 4.5)
-          </div>
-          <div class="column is-one-fifth has-text-right">
-            Feb 2019 – Feb 2024
-          </div>
-        </div>
-
-        <h2>Research Interests</h2>
-        <ul>
-          <li>CFD simulation using ANSYS Fluent (flow and temperature field)</li>
-          <li>Design improvement through thermal analysis</li>
-          <li>Heat loss reduction via insulation structure optimization</li>
-        </ul>
-
-        <h2>Projects</h2>
-        <p><b>Optimization of Planetary Gear for In-Wheel Motor Systems</b> (Capstone Design, Mar–Jun 2025)</p>
-        <ul>
-          <li>Designed planetary gear sets for the Ioniq 5 with Emrax 228 motor based on ISO/AGMA standards.</li>
-          <li>Performed modal analysis in Ansys across 100+ designs; developed ML model (GPR) to predict natural frequencies.</li>
-          <li>Built optimization algorithm to recommend lightweight, resonance-free geometries.</li>
-        </ul>
-
-        <p><b>CFD Analysis of Fuel–Air Mixing Optimization in a Four-Stroke Engine Cylinder</b> (CFD, Mar–Jun 2025)</p>
-        <ul>
-          <li>Conducted CFD study on intake port angles for improved mixing.</li>
-          <li>Modeled engine geometry (CATIA), meshed with Fluent Meshing (poly-hexcore).</li>
-          <li>Simulated unsteady flows in Ansys Fluent (SST k–ω model).</li>
-        </ul>
-
-        <p><b>Dynamic Simulation of Quarter-Car Suspension System</b> (Team project, Nov–Dec 2024)</p>
-        <ul>
-          <li>Modeled 2-DOF suspension system with MATLAB Simulink.</li>
-          <li>Created road profiles and conducted parametric studies on damping ratios.</li>
-        </ul>
-
-        <p><b>Thermal Performance Enhancement of a Commercial Pizza Oven</b> (Heat Transfer, Mar–Jun 2024)</p>
-        <ul>
-          <li>Analyzed conduction, convection, and radiation heat transfer.</li>
-          <li>Proposed insulation design; verified via ANSYS thermal simulations.</li>
-        </ul>
-
-        <h2>Extra-Curricular</h2>
-        <p><b>Sogang University Undergraduate Research Program (URF)</b> (CFD Research Intern, Jul–Aug 2025, expected)</p>
-        <ul>
-          <li>Performed CFD simulations of turbulent & multiphase flows (VOF, Mixture, Eulerian–Lagrangian models).</li>
-        </ul>
-        <p><b>Hyundai Motor Chung Mong-Koo Foundation – Onso Futures College</b> (Team Leader, Jun–Aug 2024)</p>
-        <ul>
-          <li>Led a social impact project “WattFit” using unused subway spaces for sustainable health infrastructure.</li>
-        </ul>
-
-        <h2>Technical Skills</h2>
-        <ul>
-          <li>Simulation & Analysis: ANSYS Fluent, MATLAB</li>
-          <li>CAD Modeling: AutoCAD, Autodesk Inventor, Fusion 360</li>
-        </ul>
-
-        <h2>English Proficiency</h2>
-        <ul>
-          <li>TOEIC: 800 (LC: 435, RC: 365), Nov 2023</li>
-          <li>OPIC: IH (Intermediate High), Feb 2025</li>
-        </ul>
       </div>
     </div>
   </section>
+
+  <!-- Divider -->
+  <div class="hr"><div class="container"><hr></div></div>
+
+  <!-- Projects Section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Projects</h2>
+
+      <!-- Example Project -->
+      <div class="box">
+        <h3 class="title is-4">Optimization of Planetary Gear for In-Wheel Motor Systems</h3>
+        <p>
+          Designed planetary gear sets for the Ioniq 5 with Emrax 228 motor based on ISO/AGMA standards. 
+          Performed modal analysis in Ansys across 100+ designs and developed an ML model (GPR) to predict natural frequencies.
+        </p>
+      </div>
+
+      <div class="box">
+        <h3 class="title is-4">CFD Analysis of Fuel–Air Mixing in a Four-Stroke Engine</h3>
+        <p>
+          Conducted CFD study on intake port angles for improved mixing. Modeled engine geometry (CATIA), meshed with Fluent Meshing, 
+          and simulated unsteady flows in Ansys Fluent.
+        </p>
+      </div>
+
+      <div class="box">
+        <h3 class="title is-4">Dynamic Simulation of Quarter-Car Suspension System</h3>
+        <p>
+          Modeled a 2-DOF suspension system with MATLAB Simulink. Conducted parametric studies on damping ratios 
+          using generated road profiles.
+        </p>
+      </div>
+
+      <div class="box">
+        <h3 class="title is-4">Thermal Performance Enhancement of a Commercial Pizza Oven</h3>
+        <p>
+          Analyzed conduction, convection, and radiation heat transfer. Proposed insulation designs and verified improvements with ANSYS simulations.
+        </p>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
+
