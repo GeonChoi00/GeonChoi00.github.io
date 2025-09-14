@@ -15,61 +15,21 @@ layout: null
   <link href="{{ '/css/index.css' | relative_url }}" rel="stylesheet">
   <link href="{{ '/css/fontawesome.all.min.css' | relative_url }}" rel="stylesheet">
 </head>
-  <!-- Divider between Profile and Projects -->
-  <div class="hr">
-    <div class="container">
-      <hr>
-    </div>
-  </div>
-
-  <section class="section">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3">Projects</h2>
-
-      {% for project in site.data.projects %}
-      <div class="project-block columns">
-
-        <!-- 왼쪽 이미지 -->
-        <div class="column is-3">
-          <figure class="image">
-            <img src="./images/{{ project.image }}" alt="{{ project.title }}">
-          </figure>
-        </div>
-
-        <!-- 오른쪽 설명 -->
-        <div class="column">
-          <h3 class="title is-4">
-            {{ project.title }}
-          </h3>
-          <p><b>{{ project.authors }}</b></p>
-          <p class="has-text-grey">{{ project.venue }}</p>
-          <p>{{ project.description }}</p>
-
-          {% if project.project_page %}
-          <a class="external-link button is-small is-light" href="{{ project.project_page }}">
-            <span class="icon"><i class="fas fa-globe"></i></span>
-            <span>Project Page</span>
-          </a>
-          {% endif %}
-        </div>
-
-      </div>
-      <hr>
-      {% endfor %}
-    </div>
-  </section>
 
 <body>
+  <!-- 프로필 섹션 -->
   <section class="hero">
     <div class="hero-body container is-max-desktop">
       <div class="columns">
 
+        <!-- 왼쪽: 프로필 사진 -->
         <div class="column is-4">
           <figure class="image portrait">
             <img src="{{ '/images/portrait.jpg' | relative_url }}" alt="Portrait of {{ site.name }}" />
           </figure>
         </div>
 
+        <!-- 오른쪽: 이름 / 소개 / 버튼 -->
         <div class="column">
           <h1 class="title">
             <b>Hello, I'm {{ site.name }}</b>
@@ -98,6 +58,52 @@ layout: null
       </div>
     </div>
   </section>
+
+  <!-- 구분선 -->
+  <div class="hr">
+    <div class="container">
+      <hr>
+    </div>
+  </div>
+
+  <!-- Projects 섹션 -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Projects</h2>
+
+      {% for project in site.data.projects %}
+      <div class="project-block columns">
+
+        <!-- 왼쪽: 프로젝트 이미지 -->
+        <div class="column is-3">
+          <figure class="image">
+            <img src="./images/{{ project.image }}" alt="{{ project.title }}">
+          </figure>
+        </div>
+
+        <!-- 오른쪽: 프로젝트 설명 -->
+        <div class="column">
+          <h3 class="title is-4">
+            {{ project.title }}
+          </h3>
+          <p><b>{{ project.authors }}</b></p>
+          <p class="has-text-grey">{{ project.venue }}</p>
+          <p>{{ project.description }}</p>
+
+          {% if project.project_page %}
+          <a class="external-link button is-small is-light" href="{{ project.project_page }}">
+            <span class="icon"><i class="fas fa-globe"></i></span>
+            <span>Project Page</span>
+          </a>
+          {% endif %}
+        </div>
+
+      </div>
+      <hr>
+      {% endfor %}
+    </div>
+  </section>
 </body>
 </html>
+
 
