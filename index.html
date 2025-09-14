@@ -15,6 +15,49 @@ layout: null
   <link href="{{ '/css/index.css' | relative_url }}" rel="stylesheet">
   <link href="{{ '/css/fontawesome.all.min.css' | relative_url }}" rel="stylesheet">
 </head>
+  <!-- Divider between Profile and Projects -->
+  <div class="hr">
+    <div class="container">
+      <hr>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Projects</h2>
+
+      {% for project in site.data.projects %}
+      <div class="project-block columns">
+
+        <!-- 왼쪽 이미지 -->
+        <div class="column is-3">
+          <figure class="image">
+            <img src="./images/{{ project.image }}" alt="{{ project.title }}">
+          </figure>
+        </div>
+
+        <!-- 오른쪽 설명 -->
+        <div class="column">
+          <h3 class="title is-4">
+            {{ project.title }}
+          </h3>
+          <p><b>{{ project.authors }}</b></p>
+          <p class="has-text-grey">{{ project.venue }}</p>
+          <p>{{ project.description }}</p>
+
+          {% if project.project_page %}
+          <a class="external-link button is-small is-light" href="{{ project.project_page }}">
+            <span class="icon"><i class="fas fa-globe"></i></span>
+            <span>Project Page</span>
+          </a>
+          {% endif %}
+        </div>
+
+      </div>
+      <hr>
+      {% endfor %}
+    </div>
+  </section>
 
 <body>
   <section class="hero">
