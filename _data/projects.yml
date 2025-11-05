@@ -1,6 +1,6 @@
 - title: "Optimization of Planetary Gear for In-Wheel Motor Systems"
   authors: "Geon Choi"
-  venue: "Capstone Design Project (Mar–Jun 2025)"
+  venue: "Capstone Design Project (Mar-Jun 2025)"
   description: >
     Designed planetary gear sets for the Ioniq 5 with Emrax 228 motor based on ISO/AGMA standards.
     Conducted modal analysis in Ansys across 100+ designs and built an ML model (GPR) to predict natural frequencies.
@@ -10,17 +10,17 @@
 
 - title: "CFD Analysis of Fuel–Air Mixing Optimization in a Four-Stroke Engine Cylinder"
   authors: "Geon Choi"
-  venue: "CFD Project (Mar–Jun 2025)"
+  venue: "CFD Project (Mar-Jun 2025)"
   description: >
     Conducted CFD study on intake port angles for improved mixing efficiency.
-    Modeled engine geometry (CATIA), meshed with Fluent Meshing (poly-hexcore), 
-    and simulated unsteady flows using SST k–ω turbulence model in Ansys Fluent.
+    Modeled engine geometry (CATIA), meshed with Fluent Meshing (poly-hexcore),
+    and simulated unsteady flows using SST k-ω turbulence model in Ansys Fluent.
   image: "engine_project.jpg"
   project_page: "#"
 
 - title: "Dynamic Simulation of Quarter-Car Suspension System"
   authors: "Geon Choi"
-  venue: "Team Project (Nov–Dec 2024)"
+  venue: "Team Project (Nov-Dec 2024)"
   description: >
     Modeled a 2-DOF suspension system using MATLAB Simulink.
     Created road profiles and conducted parametric studies on damping ratios for ride comfort and stability analysis.
@@ -29,9 +29,10 @@
 
 - title: "Thermal Performance Enhancement of a Commercial Pizza Oven"
   authors: "Geon Choi"
-  venue: "Heat Transfer Project (Mar–Jun 2024)"
+  venue: "Heat Transfer Project (Mar-Jun 2024)"
   description: >
     Analyzed conduction, convection, and radiation heat transfer in a commercial pizza oven.
     Proposed improved insulation designs and verified thermal performance through ANSYS simulations.
   image: "oven_project.jpg"
   project_page: "#"
+
