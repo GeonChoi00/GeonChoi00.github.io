@@ -1,11 +1,12 @@
-- name: University of Washington 
+- name: Konkuk University, Seoul, Korea
   description: >-
-    Ph. D in Computer Science, advised by <a href="https://smseitz.com">Steven M. Seitz</a> and
-    <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a>.<br />
-    Supported by Samsung Scholarship 2015-2020 ($50,000/year for 5 years)
-  dates: Fall 2015 - Spring 2022
+    B.S. in Mechanical and Aerospace Engineering<br />
+    Transferred from Hanseo University<br />
+    Cumulative GPA: 3.52 / 4.5
+  dates: Mar 2024 – Present (Expected Feb 2026)
 
-- name: University of Illinois at Urbana-Champaign
+- name: Hanseo University, Seosan, Korea
   description: >-
-    B.S. in Computer Science, advised by <a href="https://dhoiem.cs.illinois.edu/">Derek Hoiem</a>.
-  dates: Fall 2009 - Spring 2013
+    B.S. in Aeronautical Mechanical Engineering<br />
+    Cumulative GPA: 3.75 / 4.5
+  dates: Feb 2019 – Feb 2024

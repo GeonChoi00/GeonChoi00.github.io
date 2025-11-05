@@ -5,7 +5,7 @@
     Designed planetary gear sets for the Ioniq 5 with Emrax 228 motor based on ISO/AGMA standards.
     Conducted modal analysis in Ansys across 100+ designs and built an ML model (GPR) to predict natural frequencies.
     Developed an optimization algorithm to recommend lightweight, resonance-free geometries.
-  image: "gear_project.jpg"
+  image: "gear.png"
   project_page: "#"
 
 - title: "CFD Analysis of Fuel–Air Mixing Optimization in a Four-Stroke Engine Cylinder"

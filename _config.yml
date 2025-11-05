@@ -28,10 +28,9 @@ url: "https://GeonChoi00.github.io"
 
 # 선택사항 (있으면 연결, 없으면 비워도 됨)
 github_username: GeonChoi00
-google_scholar: ""   # 있으면 Scholar ID 넣기
-twitter_username: "" # 안 쓰면 비워둬
 email: rjs12300@gmail.com
 google_analytics: "" # 구글 애널리틱스 추적 ID (없으면 비워둠)
+linkedin: "https://www.linkedin.com/in/geon-choi-767596320/"
 
 
 # Build settings
