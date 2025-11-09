@@ -6,7 +6,7 @@
     Conducted modal analysis in Ansys across 100+ designs and built an ML model (GPR) to predict natural frequencies.
     Developed an optimization algorithm to recommend lightweight, resonance-free geometries.
   image: "gear.jpg"
-  project_page: "#"
+  project_page: 
   pdf: "/종합설계_유성기어 최적설계.pdf"
 
 - title: "CFD Analysis of Fuel–Air Mixing Optimization in a Four-Stroke Engine Cylinder"
@@ -17,7 +17,7 @@
     Modeled engine geometry (CATIA), meshed with Fluent Meshing (poly-hexcore),
     and simulated unsteady flows using SST k-ω turbulence model in Ansys Fluent.
   image: "CFD 프로젝트.jpg"
-  project_page: "#"
+  project_page: 
   pdf: "/전산유체역학_기말보고서_최건.pdf"
 
 
@@ -28,7 +28,7 @@
     Modeled a 2-DOF suspension system using MATLAB Simulink.
     Created road profiles and conducted parametric studies on damping ratios for ride comfort and stability analysis.
   image: "mck.jpg"
-  project_page: "#"
+  project_page: 
   pdf: "/요소설계경진대회 .pdf"
 
 - title: "Thermal Performance Enhancement of a Commercial Pizza Oven"
@@ -38,5 +38,5 @@
     Analyzed conduction, convection, and radiation heat transfer in a commercial pizza oven.
     Proposed improved insulation designs and verified thermal performance through ANSYS simulations.
   image: "열전달프로젝트.jpg"
-  project_page: "#"
+  project_page: 
   pdf: "/열전달 이론을 응용하는 Chef 되기 최종본.pdf"
