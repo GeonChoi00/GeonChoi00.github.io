@@ -7,6 +7,7 @@
     Developed an optimization algorithm to recommend lightweight, resonance-free geometries.
   image: "gear_project.jpg"
   project_page: "#"
+  pdf:
 
 - title: "CFD Analysis of Fuel–Air Mixing Optimization in a Four-Stroke Engine Cylinder"
   authors: "Geon Choi"
