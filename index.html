@@ -21,12 +21,14 @@ layout: null
     <div class="hero-body container is-max-desktop">
       <div class="columns">
 
+        <!-- 프로필 사진 -->
         <div class="column is-4">
           <figure class="image portrait">
             <img src="{{ '/images/portrait.jpg' | relative_url }}" alt="Portrait of {{ site.name }}" />
           </figure>
         </div>
 
+        <!-- 텍스트 / 버튼 -->
         <div class="column">
           <h1 class="title">
             <b>Hello, I'm {{ site.name }}</b>
@@ -34,20 +36,31 @@ layout: null
           <div class="content has-text-justified">
             {{ site.description | markdownify }}
             <div class="buttons">
+
+              <!-- CV 버튼 -->
               <a class="external-link button is-light" href="cv.html">
-                <span class="icon"><i class="fas fa-file"></i></span>
+                <span class="icon">
+                  <img src="./images/CV.png" alt="CV Icon" style="width:22px; height:22px; margin-right:4px;">
+                </span>
                 <span>CV</span>
               </a>
 
+              <!-- GitHub 버튼 (숨김 처리) -->
+              <!--
               <a class="external-link button is-light" href="https://github.com/{{ site.github_username }}">
                 <span class="icon"><i class="fab fa-github"></i></span>
                 <span>Github</span>
               </a>
+              -->
 
+              <!-- LinkedIn 버튼 -->
               <a class="external-link button is-light" href="{{ site.linkedin }}">
-                <span class="icon"><i class="fab fa-linkedin"></i></span>
+                <span class="icon">
+                  <img src="./images/linkedin.png" alt="LinkedIn Icon" style="width:22px; height:22px; margin-right:4px;">
+                </span>
                 <span>LinkedIn</span>
               </a>
+
             </div>
           </div>
         </div>
@@ -55,6 +68,7 @@ layout: null
       </div>
     </div>
   </section>
+
   <!-- Divider -->
   <div class="hr">
     <div class="container">
@@ -105,4 +119,3 @@ layout: null
 
 </body>
 </html>
-
