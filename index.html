@@ -103,8 +103,10 @@ layout: null
             {% endif %}
 
             {% if project.pdf %}
-            <a class="external-link button is-white" href="{{ project.pdf }}">
-              <span class="icon"><i class="fas fa-file-pdf"></i></span>
+            <a class="external-link button is-white" href="{{ project.pdf }}" target="_blank">
+              <span class="icon">
+                <img src="./images/피데프 사진.jpg" alt="PDF Icon" style="width:20px; height:20px; margin-right:6px;">
+              </span>
               <span>PDF</span>
             </a>
             {% endif %}
@@ -116,4 +118,3 @@ layout: null
   </section>
 </body>
 </html>
-
