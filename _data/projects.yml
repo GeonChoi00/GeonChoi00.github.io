@@ -1,3 +1,13 @@
+- title: "CFD Simulation of Multiphase Flow in a Pipe (URP, Sogang University)"
+  authors: "Geon Choi"
+  venue: "Undergraduate Research Program (Jul–Aug 2025)"
+  description: >
+    Conducted CFD simulations of turbulent and multiphase flows using VOF and Mixture models.
+    Analyzed interface behavior and bubble dynamics under various inlet velocity conditions in ANSYS Fluent.
+  image: "sogang_project.jpg"
+  project_page: "#"
+  pdf: "/서강대학교 열전달 연구실 인턴_랩미팅보고서_최건.pdf"
+
 - title: "Optimization of Planetary Gear for In-Wheel Motor Systems"
   authors: "Geon Choi"
   venue: "Capstone Design Project (Mar–Jun 2025)"
