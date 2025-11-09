@@ -16,7 +16,7 @@
     Conducted CFD study on intake port angles for improved mixing efficiency.
     Modeled engine geometry (CATIA), meshed with Fluent Meshing (poly-hexcore),
     and simulated unsteady flows using SST k-ω turbulence model in Ansys Fluent.
-  image: "engine_project.jpg"
+  image: "CFD 프로젝트.jpg"
   project_page: "#"
   pdf: "/전산유체역학_기말보고서_최건.pdf"
 
@@ -27,7 +27,7 @@
   description: >
     Modeled a 2-DOF suspension system using MATLAB Simulink.
     Created road profiles and conducted parametric studies on damping ratios for ride comfort and stability analysis.
-  image: "suspension_project.jpg"
+  image: "mck.jpg"
   project_page: "#"
   pdf: "/요소설계경진대회 .pdf"
 
@@ -37,6 +37,6 @@
   description: >
     Analyzed conduction, convection, and radiation heat transfer in a commercial pizza oven.
     Proposed improved insulation designs and verified thermal performance through ANSYS simulations.
-  image: "oven_project.jpg"
+  image: "열전달프로젝트.jpg"
   project_page: "#"
   pdf: "/열전달 이론을 응용하는 Chef 되기 최종본.pdf"
