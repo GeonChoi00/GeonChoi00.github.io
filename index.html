@@ -101,14 +101,24 @@ layout: null
                 {{ project.description }}
               </div>
 
-              {% if project.project_page %}
-              <a class="external-link button is-small is-light mt-2" href="{{ project.project_page }}">
-                <span class="icon"><i class="fas fa-globe"></i></span>
-                <span>Project Page</span>
-              </a>
-              {% endif %}
-            </div>
+              <!-- 버튼 영역 -->
+              <div class="buttons mt-2">
+                {% if project.project_page %}
+                <a class="external-link button is-small is-light" href="{{ project.project_page }}">
+                  <span class="icon"><i class="fas fa-globe"></i></span>
+                  <span>Project Page</span>
+                </a>
+                {% endif %}
 
+                {% if project.pdf %}
+                <a class="external-link button is-small is-light" href="{{ project.pdf }}">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>PDF</span>
+                </a>
+                {% endif %}
+              </div>
+
+            </div>
           </div>
         </div>
         {% endfor %}
