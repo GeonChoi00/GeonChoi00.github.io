@@ -17,6 +17,7 @@ layout: null
 </head>
 
 <body>
+  <!-- Hero Section -->
   <section class="hero">
     <div class="hero-body container is-max-desktop">
       <div class="columns">
@@ -30,9 +31,7 @@ layout: null
 
         <!-- 텍스트 / 버튼 -->
         <div class="column">
-          <h1 class="title">
-            <b>Hello, I'm {{ site.name }}</b>
-          </h1>
+          <h1 class="title"><b>Hello, I'm {{ site.name }}</b></h1>
           <div class="content has-text-justified">
             {{ site.description | markdownify }}
             <div class="buttons">
@@ -64,68 +63,57 @@ layout: null
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- Divider -->
   <div class="hr">
-    <div class="container">
-      <hr>
-    </div>
+    <div class="container"><hr></div>
   </div>
 
   <!-- Projects Section -->
   <section class="section">
     <div class="container is-max-desktop">
       <h2 class="title is-3">Projects</h2>
-      <div class="columns is-multiline">
 
-        {% for project in site.data.projects %}
-        <div class="column is-6">
-          <div class="card highlight-card">
-            
-            <!-- 이미지 -->
-            <div class="card-image">
-              <figure class="image">
-                <img src="./images/{{ project.image }}" alt="{{ project.title }}">
-              </figure>
-            </div>
+      {% for project in site.data.projects %}
+      <div class="columns is-vcentered mb-6">
 
-            <!-- 내용 -->
-            <div class="card-content">
-              <p class="title is-5">{{ project.title }}</p>
-              <p class="subtitle is-6 has-text-grey">{{ project.venue }}</p>
-              <div class="content">
-                {{ project.description }}
-              </div>
+        <!-- 왼쪽: 이미지 -->
+        <div class="column is-3">
+          <figure class="image is-4by3">
+            <img src="./images/{{ project.image }}" alt="{{ project.title }}" style="border-radius: 6px;">
+          </figure>
+        </div>
 
-              <!-- 버튼 영역 -->
-              <div class="buttons mt-2">
-                {% if project.project_page %}
-                <a class="external-link button is-small is-light" href="{{ project.project_page }}">
-                  <span class="icon"><i class="fas fa-globe"></i></span>
-                  <span>Project Page</span>
-                </a>
-                {% endif %}
+        <!-- 오른쪽: 내용 -->
+        <div class="column is-9">
+          <h3 class="title is-4" style="color:#2b50a1;">{{ project.title }}</h3>
+          <p class="subtitle is-6 has-text-grey mb-2">{{ project.venue }}</p>
+          <p class="content mb-3">{{ project.description }}</p>
 
-                {% if project.pdf %}
-                <a class="external-link button is-small is-light" href="{{ project.pdf }}">
-                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                  <span>PDF</span>
-                </a>
-                {% endif %}
-              </div>
+          <!-- 버튼 -->
+          <div class="buttons are-small">
+            {% if project.project_page %}
+            <a class="external-link button is-white" href="{{ project.project_page }}">
+              <span class="icon"><i class="fas fa-globe"></i></span>
+              <span>Project Page</span>
+            </a>
+            {% endif %}
 
-            </div>
+            {% if project.pdf %}
+            <a class="external-link button is-white" href="{{ project.pdf }}">
+              <span class="icon"><i class="fas fa-file-pdf"></i></span>
+              <span>PDF</span>
+            </a>
+            {% endif %}
           </div>
         </div>
-        {% endfor %}
-
       </div>
+      {% endfor %}
     </div>
   </section>
-
 </body>
 </html>
+
