@@ -29,6 +29,7 @@
     Created road profiles and conducted parametric studies on damping ratios for ride comfort and stability analysis.
   image: "suspension_project.jpg"
   project_page: "#"
+  pdf: "/요소설계경진대회 .pdf"
 
 - title: "Thermal Performance Enhancement of a Commercial Pizza Oven"
   authors: "Geon Choi"
@@ -38,3 +39,4 @@
     Proposed improved insulation designs and verified thermal performance through ANSYS simulations.
   image: "oven_project.jpg"
   project_page: "#"
+  pdf: "/열전달 이론을 응용하는 Chef 되기 최종본.pdf"
