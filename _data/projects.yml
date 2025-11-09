@@ -18,6 +18,8 @@
     and simulated unsteady flows using SST k-ω turbulence model in Ansys Fluent.
   image: "engine_project.jpg"
   project_page: "#"
+  pdf: "/전산유체역학_기말보고서_최건.pdf"
+
 
 - title: "Dynamic Simulation of Quarter-Car Suspension System"
   authors: "Geon Choi"
