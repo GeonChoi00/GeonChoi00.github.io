@@ -1,9 +1,10 @@
-- title: "CFD Simulation of Multiphase Flow in a Pipe (URP, Sogang University)"
+- title: "CFD Simulation of Multiphase and Heat Transfer Phenomena (Undergraduate Research, Sogang University)"
   authors: "Geon Choi"
   venue: "Undergraduate Research Program (Jul–Aug 2025)"
   description: >
-    Conducted CFD simulations of turbulent and multiphase flows using VOF and Mixture models.
-    Analyzed interface behavior and bubble dynamics under various inlet velocity conditions in ANSYS Fluent.
+    Performed comprehensive CFD analyses of laminar, turbulent, and multiphase flows using ANSYS Fluent. 
+    Implemented and compared models such as VOF, Mixture, and Eulerian–Eulerian to investigate fluid mixing, 
+    interface dynamics, and heat transfer characteristics under various flow conditions.
   image: "서강대 학연생 사진.jpg"
   project_page: 
   pdf: "/서강대학교 열전달 연구실 인턴_랩미팅보고서_최건.pdf"
