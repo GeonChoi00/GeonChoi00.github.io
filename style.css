@@ -41,7 +41,7 @@ li { margin: 0.25em 0; word-break: keep-all; }
 
 /* intro: left card + right rows */
 .intro { display: grid; grid-template-columns: 260px 1fr; gap: 64px; padding: 56px 0 48px; margin-top: 28px; border-top: 1px solid var(--rule-soft); }
-.intro .portrait { width: 240px; aspect-ratio: 4 / 5; object-fit: cover; filter: grayscale(1); }
+.intro .portrait { width: 240px; aspect-ratio: 4 / 5; object-fit: cover; }
 .intro h1 { font-size: 34px; font-weight: 500; margin: 28px 0 0; display: inline-block; border-bottom: 2px solid var(--ink); padding-bottom: 2px; }
 .intro .eng { font-size: 13px; letter-spacing: 0.08em; color: var(--ink-2); margin: 10px 0 10px; }
 .intro .contact { font-size: 14px; color: var(--ink-2); line-height: 1.7; }
