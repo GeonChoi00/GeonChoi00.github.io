@@ -1,126 +1,133 @@
----
-layout: null
----
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ site.name }} - CV</title>
-  <link href="{{ '/css/bulma.min.css' | relative_url }}" rel="stylesheet">
-  <link href="{{ '/css/cv.css' | relative_url }}" rel="stylesheet">
+  <title>Geon Choi — CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+<body class="cv">
+<div class="wrap">
 
-<body>
-  <section class="section">
-    <div class="container is-max-desktop">
+  <header class="top">
+    <a class="name" href="index.html">Geon Choi · 최건</a>
+    <nav>
+      <a href="index.html">Work</a>
+      <a href="cv.html" aria-current="page">CV</a>
+      <a href="https://www.linkedin.com/in/geon-choi-767596320/">LinkedIn</a>
+    </nav>
+  </header>
 
-      <!-- 뒤로가기 버튼 -->
-      <div style="margin-bottom: 1.5rem;">
-        <a href="index.html" class="button is-light">
-          ← Back to Home
-        </a>
-      </div>
+  <h1>Geon Choi (최건)</h1>
+  <p class="contact">Mechanical engineer · Seoul, Korea · <a href="mailto:rjs12300@gmail.com">rjs12300@gmail.com</a> · <a href="https://www.linkedin.com/in/geon-choi-767596320/">LinkedIn</a> · <a class="print" href="javascript:window.print()">Print or save as PDF</a></p>
 
-      <!-- 이름 + 사진 -->
-      <div class="columns is-vcentered">
-        <div class="column is-9">
-          <h1 class="title">CHOI GEON</h1>
-          <h2 class="subtitle">Undergraduate Student · Konkuk University</h2>
-          <p><a href="mailto:rjs12300@gmail.com">rjs12300@gmail.com</a> · +82-10-7721-7049</p>
-          <p>635-26, Jayang-dong, Gwangjin-gu, Seoul, Republic of Korea</p>
+  <section class="block">
+    <h2>Experience</h2>
+    <div>
+      <div class="row">
+        <div>
+          <h3>Valeo — Validation intern</h3>
+          <ul>
+            <li>Three-stage validation (visual, bench, vehicle) of Hyundai·Kia claim parts, including radar sensors; vehicle reproduction after rear-bumper removal and sensor mounting with a senior engineer.</li>
+            <li>Quantified defect causes; data used by European headquarters for robustness design.</li>
+            <li>Pre-delivery screening at a Hyundai delivery center: 221 taxis diagnosed with colleagues, 70 suspect units flagged.</li>
+          </ul>
         </div>
-        <div class="column is-3 has-text-right">
-          <figure class="image is-128x128 is-inline-block">
-            <img class="is-rounded" src="{{ '/images/정장.jpg' | relative_url }}" alt="Portrait of Geon Choi">
-          </figure>
+        <div class="when">2026 – present</div>
+      </div>
+      <div class="row">
+        <div>
+          <h3>Selectstar — Data intern, platform project team</h3>
+          <ul>
+            <li>Re-defined inspection criteria for a 4,000-clip multilingual TTS dataset with annotators and developers; disputed items per week fell from about 200 to 15–20.</li>
+            <li>Python + LLM translation and QA pipeline with human final check: 1,500 min → 45 min per batch.</li>
+            <li>Curated a 512-set multimodal QA dataset; spreadsheet and Python checks for clip duration and duplicate sources.</li>
+          </ul>
         </div>
+        <div class="when">Jan – Jun 2026</div>
       </div>
-
-      <!-- Education -->
-      <h2 class="title is-4">Education</h2>
-      <div class="content">
-        <p><b>Konkuk University</b>, Seoul, Korea <span class="is-pulled-right">Mar 2024 – Present</span><br>
-          B.S. in Mechanical and Aerospace Engineering (GPA: 3.57 / 4.5)<br>
-          <i>(Expected Feb 2026)</i>
-        </p>
-        <p><b>Hanseo University</b>, Seosan, Korea <span class="is-pulled-right">Feb 2019 – Feb 2024</span><br>
-          B.S. in Aeronautical Mechanical Engineering (GPA: 3.75 / 4.5)
-        </p>
-      </div>
-
-      <!-- Research Interests -->
-      <h2 class="title is-4">Research Interests</h2>
-      <ul>
-        <li>CFD simulation using ANSYS Fluent (flow and temperature field)</li>
-        <li>Design improvement through thermal analysis</li>
-        <li>Heat loss reduction via insulation structure optimization</li>
-      </ul>
-
-      <!-- Projects -->
-      <h2 class="title is-4">Projects</h2>
-      <div class="content">
-        <p><b>Optimization of Planetary Gear for In-Wheel Motor Systems</b> <span class="is-pulled-right">Mar – Jun 2025</span><br>
-          Designed planetary gear sets for the Ioniq 5 with Emrax 228 motor. Performed modal analysis in Ansys across 100+ designs, developed ML model (GPR) for frequency prediction, and built optimization algorithm.
-        </p>
-        <p><b>CFD Analysis of Fuel–Air Mixing Optimization in a Four-Stroke Engine Cylinder</b> <span class="is-pulled-right">Mar – Jun 2025</span><br>
-          Conducted CFD study on intake port angles. Modeled engine geometry (CATIA), meshed with Fluent Meshing, simulated unsteady flows in Ansys Fluent.
-        </p>
-        <p><b>Dynamic Simulation of Quarter-Car Suspension System</b> <span class="is-pulled-right">Nov – Dec 2024</span><br>
-          Modeled 2-DOF suspension system with MATLAB Simulink. Conducted parametric studies on damping ratios and ride comfort.
-        </p>
-        <p><b>Thermal Performance Enhancement of a Commercial Pizza Oven</b> <span class="is-pulled-right">Mar – Jun 2024</span><br>
-          Analyzed heat transfer, proposed insulation design, and verified via ANSYS simulations.
-        </p>
-      </div>
-
-      <!-- Work Experience -->
-      <h2 class="title is-4">Work Experience</h2>
-      <div class="content">
-        <p><b>AI Reliability Evaluation Company</b> · Data Assistant Intern <span class="is-pulled-right">Jan – Mar 2026</span></p>
-
-        <p><i>Multimodal AI Training Data Construction Project</i></p>
-        <ul>
-          <li>Collected and curated domain-specific video data (math, science, events, documents) based on open-license sources for image/audio/text QA dataset (512 sets)</li>
-          <li>Implemented spreadsheet formula automation to prevent clip duration errors</li>
-          <li>Built Python-based duplicate channel verification script to ensure data integrity</li>
-          <li>Independently resolved Vimeo segmented video merge/download issue</li>
-        </ul>
-
-        <p><i>Exhibition AI Chatbot TTS Data Construction Project</i></p>
-        <ul>
-          <li>Managed TTS audio quality evaluation pipeline across KO/EN/ZH/JA languages; recruited and trained annotators</li>
-          <li>Identified ambiguity in evaluation criteria, restructured guidelines, and conducted re-training → reduced evaluation discrepancies by 90%</li>
-          <li>Developed automated script classification system using Google Apps Script</li>
-          <li>Built multilingual translation and quality-check automation pipeline using Python and OpenAI API</li>
-        </ul>
-      </div>
-
-      <!-- Extra-Curricular -->
-      <h2 class="title is-4">Extra-Curricular</h2>
-      <p><b>Sogang University Undergraduate Research Program (URF)</b> <span class="is-pulled-right">Jul – Aug 2025</span><br>
-        CFD research intern focusing on turbulent & multiphase flows (VOF, Mixture, Eulerian–Lagrangian).
-      </p>
-      <p><b>Hyundai Motor Chung Mong-Koo Foundation – Onso Futures College</b> <span class="is-pulled-right">Jun – Aug 2024</span><br>
-        Led "WattFit" project using subway spaces for sustainable fitness/energy infrastructure.
-      </p>
-
-      <!-- Skills -->
-      <h2 class="title is-4">Technical Skills</h2>
-      <ul>
-        <li>Simulation & Analysis: ANSYS Fluent, MATLAB</li>
-        <li>CAD Modeling: AutoCAD, Autodesk Inventor, Fusion 360</li>
-      </ul>
-
-      <!-- English -->
-      <h2 class="title is-4">English Proficiency</h2>
-      <ul>
-        <li>TOEIC: 800 (LC: 435, RC: 365) Nov 2023</li>
-        <li>OPIC: IH (Intermediate High) Feb 2025</li>
-      </ul>
-
     </div>
   </section>
+
+  <section class="block">
+    <h2>Projects</h2>
+    <div>
+      <div class="row">
+        <div>
+          <h3>Optimal design of a planetary gear for an in-wheel motor (capstone, team of 3)</h3>
+          <p>3.7 M+ combinations filtered to 98,530 feasible sets; GPR surrogate trained on ANSYS modal results (MRE 1.91% on unseen geometry); final design verified in ANSYS and ROMAX (S<sub>H</sub> 3.24, S<sub>F</sub> 3.18). <a href="pdf/planetary-gear-thesis.pdf">PDF</a></p>
+        </div>
+        <div class="when">Mar – Jun 2025</div>
+      </div>
+      <div class="row">
+        <div>
+          <h3>CFD of intake-port geometry for fuel–air mixing (course; midterm team of 4, final solo)</h3>
+          <p>Fluent dynamic mesh at 1,600 rpm; intake angle, fuel-port orientation and valve fillet compared by RMSE of fuel distribution. <a href="pdf/cfd-intake-final.pdf">PDF</a></p>
+        </div>
+        <div class="when">Mar – Jun 2025</div>
+      </div>
+      <div class="row">
+        <div>
+          <h3>Multiphase (VOF) tank-filling simulation — Sogang University undergraduate research</h3>
+          <p>Resolved divergence through the Courant condition (Δt ≤ 0.0002 s); compared VOF and coupled VOF–Level Set. <a href="pdf/sogang-multiphase-report.pdf">PDF</a></p>
+        </div>
+        <div class="when">Jul – Aug 2025</div>
+      </div>
+      <div class="row">
+        <div>
+          <h3>Quarter-car suspension simulation (course, team of 4)</h3>
+          <p>2-DOF Simscape model, four road inputs, damping-ratio sweep; chose ζ = 0.4 on rebound count vs. peak acceleration. <a href="pdf/quarter-car-simulink.pdf">PDF</a></p>
+        </div>
+        <div class="when">Nov – Dec 2024</div>
+      </div>
+      <div class="row">
+        <div>
+          <h3>Heat loss in a commercial pizza oven (course, team of 3)</h3>
+          <p>Conduction–convection–radiation model and ANSYS thermal comparison of wall thicknesses; maximum heat flux 6.86×10⁶ → 2.83×10⁶ W/m². <a href="pdf/pizza-oven-heat-transfer.pdf">PDF</a></p>
+        </div>
+        <div class="when">Mar – Jun 2024</div>
+      </div>
+      <div class="row">
+        <div>
+          <h3>WattFit — Hyundai Motor Chung Mong-Koo Foundation, Onso Futures College (team lead, 4)</h3>
+          <p>Energy-harvesting gym proposal for a 3,075 m² unused subway corridor; 62 machines, ~21,700 kWh/yr estimate; best presentation team. <a href="pdf/wattfit-onso.pdf">PDF</a></p>
+        </div>
+        <div class="when">Jun – Aug 2024</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Education</h2>
+    <div>
+      <div class="row">
+        <div><h3>Konkuk University, Seoul</h3><p>B.S. in Mechanical and Aerospace Engineering · GPA 3.57 / 4.5</p></div>
+        <div class="when">Mar 2024 – Feb 2026</div>
+      </div>
+      <div class="row">
+        <div><h3>Hanseo University, Seosan</h3><p>B.S. in Aeronautical Mechanical Engineering · GPA 3.75 / 4.5</p></div>
+        <div class="when">Feb 2019 – Feb 2024</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Skills</h2>
+    <dl class="kv">
+      <dt>CAD</dt><dd>CATIA V5, Fusion 360, Autodesk Inventor</dd>
+      <dt>CAE</dt><dd>ANSYS Mechanical (static, modal), Ansys Fluent, CFD-Post, ROMAX</dd>
+      <dt>Modelling &amp; data</dt><dd>MATLAB / Simulink, Python (GPR, LLM pipelines), Google Apps Script</dd>
+      <dt>English</dt><dd>OPIc IH (Feb 2025)</dd>
+    </dl>
+  </section>
+
+  <footer>
+    <span>Geon Choi · <a href="mailto:rjs12300@gmail.com">rjs12300@gmail.com</a></span>
+    <span>Updated November 2026</span>
+  </footer>
+
+</div>
 </body>
 </html>
