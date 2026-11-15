@@ -1,120 +1,184 @@
----
-layout: null
----
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ site.name }}</title>
-
-  <!-- CSS 불러오기 -->
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="{{ '/css/bulma.min.css' | relative_url }}" rel="stylesheet">
-  <link href="{{ '/css/index.css' | relative_url }}" rel="stylesheet">
-  <link href="{{ '/css/fontawesome.all.min.css' | relative_url }}" rel="stylesheet">
+  <title>Geon Choi — Mechanical engineer</title>
+  <meta name="description" content="Geon Choi (최건). Mechanical engineer who validates automotive parts on the bench and on the vehicle, and designs with FEM, CFD and surrogate models.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2310233a'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='17' font-weight='600' fill='white' text-anchor='middle'%3EGC%3C/text%3E%3C/svg%3E">
 </head>
-
 <body>
-  <!-- Hero Section -->
+<div class="wrap">
+
+  <header class="top">
+    <a class="name" href="index.html">Geon Choi · 최건</a>
+    <nav>
+      <a href="index.html" aria-current="page">Work</a>
+      <a href="cv.html">CV</a>
+      <a href="https://www.linkedin.com/in/geon-choi-767596320/">LinkedIn</a>
+    </nav>
+  </header>
+
   <section class="hero">
-    <div class="hero-body container is-max-desktop">
-      <div class="columns">
-
-        <!-- 프로필 사진 -->
-        <div class="column is-4">
-          <figure class="image portrait">
-            <img src="{{ '/images/정장.jpg' | relative_url }}" alt="Portrait of {{ site.name }}" />
-          </figure>
-        </div>
-
-        <!-- 텍스트 / 버튼 -->
-        <div class="column">
-          <h1 class="title"><b>Hello, I'm {{ site.name }}</b></h1>
-          <div class="content has-text-justified">
-            {{ site.description | markdownify }}
-            <div class="buttons">
-
-              <!-- CV 버튼 -->
-              <a class="external-link button is-light" href="cv.html">
-                <span class="icon">
-                  <img src="./images/CV.png" alt="CV Icon" style="width:22px; height:22px; margin-right:4px;">
-                </span>
-                <span>CV</span>
-              </a>
-
-              <!-- GitHub 버튼 (숨김 처리) -->
-              <!--
-              <a class="external-link button is-light" href="https://github.com/{{ site.github_username }}">
-                <span class="icon"><i class="fab fa-github"></i></span>
-                <span>Github</span>
-              </a>
-              -->
-
-              <!-- LinkedIn 버튼 -->
-              <a class="external-link button is-light" href="{{ site.linkedin }}">
-                <span class="icon">
-                  <img src="./images/linkedin.png" alt="LinkedIn Icon" style="width:22px; height:22px; margin-right:4px;">
-                </span>
-                <span>LinkedIn</span>
-              </a>
-
-            </div>
-          </div>
-        </div>
+    <div>
+      <h1>I check parts on the bench, then on the car.</h1>
+      <p class="lede">Mechanical engineer. At Valeo I validate Hyundai and Kia claim parts in three stages — visual, bench, vehicle — and send what I find back to design. Before that: a planetary-gear optimization with FEM and a GPR surrogate, and CFD in Fluent.</p>
+      <div class="titleblock" aria-label="Summary">
+        <div><small>Name</small><b>최건 Geon Choi</b></div>
+        <div><small>Now</small><b>Validation intern, Valeo (Seoul)</b></div>
+        <div><small>Looking at</small><b>Body &amp; exterior parts, CAE</b></div>
+        <div><small>Contact</small><b><a href="mailto:rjs12300@gmail.com">rjs12300@gmail.com</a></b></div>
       </div>
+    </div>
+    <img class="portrait" src="img/portrait.jpg" alt="Geon Choi" width="220" height="275">
+  </section>
+
+  <section class="block" id="experience">
+    <h2>Experience</h2>
+    <div>
+      <article class="entry noimg">
+        <div>
+          <h3>Valeo — Validation intern</h3>
+          <p class="meta"><span>2026 – present</span><span>Hyundai·Kia claim parts, radar sensors</span></p>
+          <div class="steps" aria-label="Validation stages">
+            <div><b>Visual</b><span>Part and mounting</span></div>
+            <div><b>Bench</b><span>Reproduce the symptom</span></div>
+            <div><b>Vehicle</b><span>Mount, drive, confirm</span></div>
+          </div>
+          <ul>
+            <li>When a symptom does not show on the bench, I remove the rear bumper with a senior engineer, mount the sensor and drive to reproduce it. That is where I learned how fastening, disassembly order and mounting position decide what a sensor sees.</li>
+            <li>Quantified defect causes; the data went to headquarters in Europe as input for a more robust design.</li>
+            <li>Pre-delivery screening at a Hyundai delivery center: with colleagues, diagnosed 221 radar-equipped taxis before release and flagged 70 suspect units (33 of them mine). We agreed the pass/fail rule first — the first 8 digits of the serial number — then split the lot.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry noimg">
+        <div>
+          <h3>Selectstar — Data intern, platform project team</h3>
+          <p class="meta"><span>Jan – Jun 2026</span><span>AI training-data quality</span></p>
+          <ul>
+            <li>Re-set the inspection rules for a 4,000-clip TTS dataset with annotators and the dev team. Disputed items fell from about 200 a week to 15–20 once the rules were written as numbers (misjudgment rate, annotator spread) rather than opinions.</li>
+            <li>Built a translation and quality-check pipeline in Python with an LLM doing the first pass and a person the final check: a 1,500-minute task became a 45-minute one.</li>
+          </ul>
+        </div>
+      </article>
     </div>
   </section>
 
-  <!-- Divider -->
-  <div class="hr">
-    <div class="container"><hr></div>
-  </div>
+  <section class="block" id="projects">
+    <h2>Projects</h2>
+    <div>
 
-  <!-- Projects Section -->
-  <section class="section">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3">Projects</h2>
-
-      {% for project in site.data.projects %}
-      <div class="columns is-vcentered mb-6">
-
-        <!-- 왼쪽: 이미지 -->
-        <div class="column is-3">
-          <figure class="image is-4by3">
-            <img src="./images/{{ project.image }}" alt="{{ project.title }}" style="border-radius: 6px;">
-          </figure>
+      <article class="entry">
+        <div>
+          <h3>Planetary gear for an in-wheel motor — resonance-free, minimum volume</h3>
+          <p class="meta"><span>Capstone, Mar – Jun 2025 · thesis Nov 2025</span><span>Team of 3</span><span>MATLAB, ANSYS Modal, ROMAX</span></p>
+          <ul>
+            <li>Target: IONIQ 5-class wheel torque with four EMRAX 228 motors; design variables module, tooth counts, face width and shaft diameter under ISO 6336 / AGMA strength limits.</li>
+            <li>More than 3.7 million combinations were filtered to 98,530 feasible gear sets. Instead of running modal FEM on each, we trained a GPR surrogate on ANSYS results and checked it on a geometry it had not seen: mean relative error 1.91%.</li>
+            <li>Final set (module 2.68, 60T/12T, face width 59 mm, 3.94×10⁶ mm³) re-checked in ANSYS and ROMAX: S<sub>H</sub> 3.24, S<sub>F</sub> 3.18, no gear-mesh resonance within ±10%.</li>
+          </ul>
+          <p class="links"><a href="pdf/planetary-gear-thesis.pdf">Thesis (PDF)</a><a href="pdf/planetary-gear-slides.pdf">Slides (PDF)</a></p>
         </div>
+        <img class="thumb" src="img/gear.jpg" alt="ROMAX model of the planetary gear set" loading="lazy">
+      </article>
 
-        <!-- 오른쪽: 내용 -->
-        <div class="column is-9">
-          <h3 class="title is-4" style="color:#2b50a1;">{{ project.title }}</h3>
-          <p class="subtitle is-6 has-text-grey mb-2">{{ project.venue }}</p>
-          <p class="content mb-3">{{ project.description }}</p>
-
-          <!-- 버튼 -->
-          <div class="buttons are-small">
-            {% if project.project_page %}
-            <a class="external-link button is-white" href="{{ project.project_page }}">
-              <span class="icon"><i class="fas fa-globe"></i></span>
-              <span>Project Page</span>
-            </a>
-            {% endif %}
-
-            {% if project.pdf %}
-            <a class="external-link button is-white" href="{{ project.pdf }}" target="_blank">
-              <span class="icon">
-                <img src="./images/피데프 사진.jpg" alt="PDF Icon" style="width:20px; height:20px; margin-right:6px;">
-              </span>
-              <span>PDF</span>
-            </a>
-            {% endif %}
-          </div>
+      <article class="entry">
+        <div>
+          <h3>Intake-port geometry for fuel–air mixing in a single cylinder</h3>
+          <p class="meta"><span>CFD course, Mar – Jun 2025</span><span>Midterm team of 4 · final solo</span><span>CATIA V5, Ansys Fluent 25R1</span></p>
+          <ul>
+            <li>Midterm (team): intake angle 10–30° with air only, SST k-ω, Poly-Hexcore mesh. I owned the 20° case and compiled the report.</li>
+            <li>Final (solo): dynamic mesh at 1,600 rpm with n-octane injection, Realizable k-ε. Compared intake angle, fuel-port orientation and valve fillet R2–R8 by RMSE of fuel distribution and vortex-core patterns, not by how the contours looked.</li>
+            <li>Chose 20° intake, a vertical centre fuel port and an R2 fillet. Limitation I wrote down: the grid count was too low to call the solution converged.</li>
+          </ul>
+          <p class="links"><a href="pdf/cfd-intake-final.pdf">Final report (PDF)</a><a href="pdf/cfd-intake-midterm.pdf">Midterm (PDF)</a></p>
         </div>
-      </div>
-      {% endfor %}
+        <img class="thumb" src="img/cfd.jpg" alt="Final cylinder and intake-port geometry" loading="lazy">
+      </article>
+
+      <article class="entry">
+        <div>
+          <h3>Multiphase tank-filling simulation</h3>
+          <p class="meta"><span>Undergraduate research, Sogang University, Jul – Aug 2025</span><span>Solo</span><span>Ansys Fluent (VOF)</span></p>
+          <ul>
+            <li>2D free-surface flow of water entering an empty tank. The first runs diverged with residuals above 10²⁰; the fix was the Courant condition — 1 mm cells, ~1 m/s, CFL 0.2 — which bounds the time step at 0.0002 s, then 10,000 steps for 2 s of flow.</li>
+            <li>Compared VOF with the coupled VOF–Level Set model on interface sharpness before settling on the coupled model.</li>
+          </ul>
+          <p class="links"><a href="pdf/sogang-multiphase-report.pdf">Lab-meeting report (PDF)</a></p>
+        </div>
+        <img class="thumb" src="img/multiphase.jpg" alt="Residual history and water volume-fraction contour" loading="lazy">
+      </article>
+
+      <article class="entry">
+        <div>
+          <h3>Quarter-car suspension: picking a damping ratio</h3>
+          <p class="meta"><span>Course project, Nov – Dec 2024</span><span>Team of 4</span><span>MATLAB Simulink / Simscape</span></p>
+          <ul>
+            <li>2-DOF model (sprung 450 kg, unsprung 50 kg; k 12,500 and 160,000 N/m) driven by four road inputs: washboard, 3 cm step, parking ramp, speed bump.</li>
+            <li>Swept ζ from 0.25 to 1.0. Higher damping cut the number of rebounds but raised peak body acceleration, so we defined "comfortable" as no second rebound at the lowest peak and chose ζ = 0.4 (c = 1,900 N·s/m).</li>
+          </ul>
+          <p class="links"><a href="pdf/quarter-car-simulink.pdf">Slides (PDF)</a></p>
+        </div>
+        <img class="thumb" src="img/quarter-car.jpg" alt="Simulink block diagram of the quarter-car model" loading="lazy">
+      </article>
+
+      <article class="entry">
+        <div>
+          <h3>Heat loss in a commercial pizza oven</h3>
+          <p class="meta"><span>Heat-transfer course, Mar – Jun 2024</span><span>Team of 3</span><span>Inventor, ANSYS Steady-State Thermal</span></p>
+          <ul>
+            <li>Modelled conduction, convection and radiation for a wood-fired oven and compared wall thicknesses: maximum heat flux fell from 6.86×10⁶ to 2.83×10⁶ W/m² with the thicker wall. I ran the ANSYS cases and the convection coefficients.</li>
+            <li>What I got wrong: I used a forced-convection correlation (Dittus–Boelter, h ≈ 105.7 W/m²K) where the oven interior is closer to natural convection. I only saw it after submission. Since then I write down the assumptions behind a formula before I use it.</li>
+          </ul>
+          <p class="links"><a href="pdf/pizza-oven-heat-transfer.pdf">Report (PDF)</a></p>
+        </div>
+        <img class="thumb" src="img/oven.jpg" alt="ANSYS total heat flux contour of the oven" loading="lazy">
+      </article>
+
+      <article class="entry">
+        <div>
+          <h3>WattFit — an energy-harvesting gym in an unused subway corridor</h3>
+          <p class="meta"><span>Hyundai Motor Chung Mong-Koo Foundation, Onso Futures College, Jun – Aug 2024</span><span>Team lead, 4 people</span></p>
+          <ul>
+            <li>Proposed fitting the 3,075 m² unused transfer corridor at Sindang station with 62 energy-harvesting machines, estimated at about 21,700 kWh a year.</li>
+            <li>I ran the schedule, the user survey, the energy and CO₂ estimate and the final pitch. When the design and engineering members disagreed on priorities, we let the survey decide. Selected as a best presentation team.</li>
+          </ul>
+          <p class="links"><a href="pdf/wattfit-onso.pdf">Deck (PDF)</a></p>
+        </div>
+        <img class="thumb" src="img/wattfit.jpg" alt="Floor plan of the proposed gym in the Sindang station corridor" loading="lazy">
+      </article>
+
     </div>
   </section>
+
+  <section class="block" id="skills">
+    <h2>Tools</h2>
+    <dl class="kv">
+      <dt>CAD</dt><dd>CATIA V5, Fusion 360, Autodesk Inventor</dd>
+      <dt>CAE</dt><dd>ANSYS Mechanical (static, modal), Ansys Fluent, CFD-Post, ROMAX</dd>
+      <dt>Modelling &amp; data</dt><dd>MATLAB / Simulink, Python (GPR surrogate, LLM pipelines), Google Apps Script</dd>
+      <dt>Languages</dt><dd>Korean (native), English (OPIc IH, Feb 2025)</dd>
+    </dl>
+  </section>
+
+  <section class="block" id="education">
+    <h2>Education</h2>
+    <dl class="kv">
+      <dt>Mar 2024 – Feb 2026</dt><dd>Konkuk University, Seoul — B.S. Mechanical and Aerospace Engineering (GPA 3.57 / 4.5)</dd>
+      <dt>Feb 2019 – Feb 2024</dt><dd>Hanseo University — B.S. Aeronautical Mechanical Engineering (GPA 3.75 / 4.5)</dd>
+    </dl>
+  </section>
+
+  <footer>
+    <span>Geon Choi · <a href="mailto:rjs12300@gmail.com">rjs12300@gmail.com</a> · <a href="https://www.linkedin.com/in/geon-choi-767596320/">LinkedIn</a></span>
+    <span>Updated November 2026</span>
+  </footer>
+
+</div>
 </body>
 </html>
